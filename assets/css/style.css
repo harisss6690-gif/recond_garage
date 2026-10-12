@@ -1,0 +1,140 @@
+/* ============================
+   RECOND GARAGE - CUSTOM STYLE
+   ============================ */
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Container */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Cards */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 1px solid #e9ecef;
+}
+
+/* Button */
+.btn {
+    border-radius: 6px;
+}
+
+/* ============================
+   MOBILE RESPONSIVE
+   ============================ */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .container[style*="max-width"] {
+        max-width: 100% !important;
+        padding: 0 12px;
+    }
+
+    .form-control,
+    .form-select {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+    .btn {
+        padding: 10px 16px;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .display-4 {
+        font-size: 1.8rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    footer .row > div {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    footer h5 {
+        font-size: 1rem;
+    }
+
+    footer ul {
+        padding-left: 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+}
+
+/* ============================
+   CAR CARD
+   ============================ */
+.card.h-100 img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ============================
+   TABLE
+   ============================ */
+.table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+/* ============================
+   APPOINTMENT TABLE → CARD ON MOBILE
+   ============================ */
+
+/* Desktop: tunjuk table, sorok cards */
+.appt-table {
+    display: block;
+}
+.appt-cards {
+    display: none;
+}
+
+/* Mobile (<768px): sorok table, tunjuk cards */
+@media (max-width: 768px) {
+    .appt-table {
+        display: none !important;
+    }
+    .appt-cards {
+        display: block !important;
+    }
+}
